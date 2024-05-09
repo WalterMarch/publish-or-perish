@@ -3,7 +3,7 @@ A devcontainer for writing and publishing articles
 
 ## Backstory
 
-I've decided there are 3 Pillars of Walter: Learning, Developing, and Writing. This repository is all about facilitating the Writing pillar (and, come to think of it, will incorporate the other two pillars as well).
+I've decided there are 3 Pillars of Walter: Learning, Programming, and Writing. This repository is all about facilitating the Writing pillar (and, come to think of it, will incorporate the other two pillars as well).
 
 ## Expected Outcomes
 
