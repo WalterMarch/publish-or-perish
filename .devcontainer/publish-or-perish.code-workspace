@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../../drafts"
+		},
+		{
+			"path": "../../published-test"
+		}
+	],
+	"settings": {
+		"cSpell.words": [
+			"devcontainer",
+			"devcontainers",
+			"pyenv",
+			"USERPROFILE",
+			"venv"
+		]
+	}
+}

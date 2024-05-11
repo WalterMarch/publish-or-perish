@@ -1,0 +1,29 @@
+{
+    "name": "publish-or-perish",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
+    "features": {
+		"ghcr.io/devcontainers/features/powershell:1": {}
+	},
+    // https://stackoverflow.com/a/67803226/21655737
+    "mounts": [
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.ssh,target=/home/vscode/.ssh,type=bind",
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/git/wm-writing-drafts,target=/workspaces/drafts,type=bind",
+        "source=${localEnv:HOME}${localEnv:USERPROFILE}/git/wm-published-test,target=/workspaces/published-test,type=bind"
+	],
+	"postCreateCommand": "${containerWorkspaceFolder}/.devcontainer/post-create.sh ${containerWorkspaceFolder}",	
+    "customizations": {
+		"vscode": {
+			"settings" : {"editor.rulers": [72, 79]},
+			"extensions": [
+				"ms-vscode-remote.remote-wsl",
+				"eamodio.gitlens",
+				"streetsidesoftware.code-spell-checker",
+				"ms-azuretools.vscode-docker",
+				"GitHub.copilot",
+				"DavidAnson.vscode-markdownlint",
+				"analytic-signal.preview-pdf",
+				"ms-vscode.PowerShell"
+			]
+		}
+	}
+}
